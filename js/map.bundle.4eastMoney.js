@@ -1329,7 +1329,7 @@
                     url: eastMoneyUrl,
                     data: "",
                     success: function(t) {
-                        console.info("e : "+ JSON.stringify(e))
+                        // console.info("e : "+ JSON.stringify(e))
                         var nodes = t.data;
                         var stockList = t.data.diff;
                         var stocks = {};
