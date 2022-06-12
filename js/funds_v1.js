@@ -39,7 +39,7 @@ fundslist.forEach(function (index) {
       </div></div>`;
       }
     } else {
-      result += `!{_p("aside.card_funds.zero")}`;
+      result += '!{_p("aside.card_funds.zero")}';
     }
     let $dom = document.querySelector("#card-funds .funds-list");
     $dom.innerHTML = result;
