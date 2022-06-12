@@ -1,5 +1,5 @@
 var fundslist = ["006627", "003859", "008764", "090010", "162719", "012414"];
-fundslist.forEach(function (item, index) {
+fundslist.forEach(function (index) {
   var funds = fundslist[index];
   var fundsurl = "https://api.doctorxiong.club/v1/fund?code=" + funds;
   // console.log(fundsurl);
@@ -39,7 +39,7 @@ fundslist.forEach(function (item, index) {
       </div></div>`;
       }
     } else {
-      result += '!{_p("aside.card_funds.zero")}';
+      result += `!{_p("aside.card_funds.zero")}`;
     }
     let $dom = document.querySelector("#card-funds .funds-list");
     $dom.innerHTML = result;
